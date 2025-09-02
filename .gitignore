@@ -1,0 +1,29 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# Distribution / packaging
+*.egg
+*.egg-info/
+dist/
+build/
+*.eggs/
+
+# IDE / editor cruft
+*.swp
+*.swo
+*~
+.DS_Store
+.vscode/
+.idea/
+
+# Logs
+*.log

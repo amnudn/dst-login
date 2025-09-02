@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dst-login"
+version = "0.1.0"
+description = "Automatized login and RDP launcher for DST"
+authors = [{ name = "Anders Munch" }]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "selenium>=4.0",
+    "webdriver-manager>=4.0",
+]
+
+[project.scripts]
+dst-login = "dst_login.__main__:main"

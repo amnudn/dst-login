@@ -1,0 +1,11 @@
+Setup:
+- Make package structure so easy to install for others
+
+Notes for installation guide:
+- need xfreerdp installed
+- chromium (rest can be manged by some webdriver?)
+- git clone
+- make venv
+- pipx install command
+
+
