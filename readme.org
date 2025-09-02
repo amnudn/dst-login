@@ -1,8 +1,6 @@
 #+TITLE: dst-login
 #+AUTHOR: Anders Munch
 
-* dst-login
-
 Automated login and RDP launcher for DST using Selenium.
 
 This script logs into the DST remote portal, downloads the RDP
