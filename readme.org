@@ -1,11 +1,74 @@
-Setup:
-- Make package structure so easy to install for others
+#+TITLE: dst-login
+#+AUTHOR: Anders Munch
 
-Notes for installation guide:
-- need xfreerdp installed
-- chromium (rest can be manged by some webdriver?)
-- git clone
-- make venv
-- pipx install command
+* dst-login
 
+Automated login and RDP launcher for DST using Selenium.
+
+This script logs into the DST remote portal, downloads the RDP
+launcher, and optionally starts ~xfreerdp~ with the correct arguments.
+
+* Installation
+
+** System requirements
+
+Before installing, make sure you have:
+
+- A Chromium-based browser (e.g. ~chromium-browser~)
+- ~xfreerdp~
+
+On Ubuntu/Debian you can install them with:
+
+#+begin_src bash
+sudo apt update
+sudo apt install chromium-browser freerdp2-x11
+#+end_src
+
+** Development install
+
+Clone the repository and install in editable mode:
+
+#+begin_src bash
+git clone https://github.com/YOURNAME/dst-login.git
+cd dst-login
+python3 -m venv venv
+source venv/bin/activate
+pip install -e .
+#+end_src
+
+Now you can run the command:
+
+#+begin_src bash
+dst-login --help
+#+end_src
+
+** User install with pipx
+
+To install globally without worrying about venv activation:
+
+#+begin_src bash
+pipx install .
+#+end_src
+
+This makes ~dst-login~ available directly in your ~$PATH~.
+
+* Usage
+
+Run the command with your DST credentials:
+
+#+begin_src bash
+dst-login IDENT PIN PROJECT
+#+end_src
+
+See help page for further options.
+
+* Development workflow
+
+- Change code under =src/dst_login/=
+- No reinstall needed (because of editable mode).
+- If you add or change dependencies, run:
+
+#+begin_src bash
+pip install -e .
+#+end_src
 
