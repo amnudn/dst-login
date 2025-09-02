@@ -27,18 +27,13 @@ sudo apt install chromium-browser freerdp2-x11
 Clone the repository and install in editable mode:
 
 #+begin_src bash
-git clone https://github.com/YOURNAME/dst-login.git
+git clone https://github.com/amnudn/dst-login.git
 cd dst-login
 python3 -m venv venv
 source venv/bin/activate
 pip install -e .
 #+end_src
 
-Now you can run the command:
-
-#+begin_src bash
-dst-login --help
-#+end_src
 
 ** User install with pipx
 
@@ -58,7 +53,11 @@ Run the command with your DST credentials:
 dst-login IDENT PIN PROJECT
 #+end_src
 
-See help page for further options.
+See help page for further options, i.e., run
+
+#+begin_src bash
+dst-login --help
+#+end_src
 
 * Development workflow
 
