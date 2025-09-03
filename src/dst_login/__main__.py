@@ -195,7 +195,7 @@ def parse_args():
                         default="/size:1800x1050",
                         help="Arguments for xfreerdp basides file, username, and password. E.g., /size:, /scale:...")
     parser.add_argument("--download-dir",
-                        default="~/tmp/",
+                        default="/tmp/",
                         help="Download directory")
     parser.add_argument("--launcher-rename",
                         default="dst-launcher.rdp",
